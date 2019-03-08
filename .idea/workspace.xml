@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3d4b81af-5829-4a47-8f34-c810b7a71a69" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/cardgame/src/app/app.component.html" afterPath="$PROJECT_DIR$/cardgame/src/app/app.component.html" />
-      <change beforePath="$PROJECT_DIR$/cardgame/src/app/app.component.scss" afterPath="$PROJECT_DIR$/cardgame/src/app/app.component.scss" />
       <change beforePath="$PROJECT_DIR$/cardgame/src/app/app.component.ts" afterPath="$PROJECT_DIR$/cardgame/src/app/app.component.ts" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />

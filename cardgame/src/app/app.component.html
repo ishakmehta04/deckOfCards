@@ -9,7 +9,7 @@
 	<div class="gameContainer">
 		<div class="buttonWrapper">
 			<button type="button" (click)="reset()">Start Again</button>
-			<button type="button" (click)="shuffle()">Shuffle</button>
+			<button type="button" (click)="shuffle()" [disabled]= "listOfCards.length === 0">Shuffle</button>
 			<button type="button" (click)="dealOne()">Deal One</button>
 		</div>
 		<div class="cardCounter">
