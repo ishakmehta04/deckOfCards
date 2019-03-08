@@ -1,0 +1,70 @@
+.container {
+  text-align: center;
+
+  .gameContainer{
+    .buttonWrapper {
+      button {
+        margin: 0 10px;
+        padding: 10px;
+        border-radius: 5px;
+        font-size: 1rem;
+        background: transparent;
+        border: 1px solid;
+      }
+    }
+    .cardCounter {
+      margin: 10px 0;
+      font-size: 1rem;
+    }
+  }
+
+  .cardWrapper {
+    .card-list {
+      list-style-type: none;
+
+      li {
+        display: inline-block;
+        margin: 0 5px 5px 0;
+
+        .card {
+          width: 60px;
+          height: 80px;
+          border-radius: 3px;
+          border: 1px solid #666;
+          background-color: #fff;
+          padding: 4px;
+          font-size: 20px;
+          position: relative;
+
+          &.red {
+            color: red;
+          }
+
+          &.black {
+            color: black;
+          }
+
+          .suit {
+            font-size: 35px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+          }
+
+          .letterTop {
+            position: absolute;
+            left: 5px;
+            top: 5px;
+          }
+
+          .letterBottom {
+            position: absolute;
+            right: 5px;
+            bottom: 5px;
+          }
+        }
+      }
+    }
+  }
+}
