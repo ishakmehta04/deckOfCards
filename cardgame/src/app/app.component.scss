@@ -43,6 +43,33 @@
           &.black {
             color: black;
           }
+          &.card-King,
+          &.card-Queen,
+          &.card-Jack {
+            background-repeat: no-repeat;
+            background-size: 60%;
+            background-position: center;
+          
+            .suit {
+              font-size: 18px;
+              // top: 33px;
+              // left: 11px;
+              top: 25px;
+              left: 5px;
+              transform: translate(0%, 0%);
+            }
+          }
+          &.card-King{
+            background-image: url(../images/king.png);
+          }
+
+          &.card-Queen{
+            background-image: url(../images/queen.png);
+          }
+
+          &.card-Jack{
+            background-image: url(../images/jack.png);
+          }
 
           .suit {
             font-size: 35px;

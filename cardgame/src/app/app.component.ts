@@ -14,17 +14,18 @@ export class AppComponent {
       color: 'black',
       glyph: '&#x2663;'
     }, {
-      name: 'Spades',
-      color: 'black',
-      glyph: '&#x2660;'
-    }, {
-      name: 'Hearts',
-      color: 'red',
-      glyph: '&#x2665;'
-    }, {
       name: 'Diamonds',
       color: 'red',
       glyph: '&#x2666;'
+    },{
+      name: 'Hearts',
+      color: 'red',
+      glyph: '&#x2665;'
+    },
+    {
+      name: 'Spades',
+      color: 'black',
+      glyph: '&#x2660;'
     }];
     listOfCards = [];
 	selectedCard = [];
@@ -65,18 +66,18 @@ export class AppComponent {
         // repeat 20 times for a new deck
         for (let i = 0; i < 20; i++) {
           // cut the cards in half
-          let halves = this.divide(this.listOfCards);
+          let split = this.divide(this.listOfCards);
           // we will stack both halves into this pile
           let deck = [];
-          while (halves.top.length > 0 || halves.bottom.length > 0) {
+          while (split.top.length > 0 || split.bottom.length > 0) {
             // a random number of cards to take from the top
             let take = this.randomCardPicker(1, 5);
             // take that many cards from the top and put in the pile
-            deck = deck.concat(halves.top.splice(0, take));
+            deck = deck.concat(split.top.splice(0, take));
             // a random number of cards to take from the bottom
             take = this.randomCardPicker(1, 5);
             // take that many cards from the bottom and put in the pile
-            deck = deck.concat(halves.bottom.splice(0, take));
+            deck = deck.concat(split.bottom.splice(0, take));
           }
           // put the bottom onto the top so cards are mixed up more
           let temp = this.divide(deck);

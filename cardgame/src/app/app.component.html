@@ -18,7 +18,7 @@
 		<div class="cardWrapper">
 			<ul class="card-list">
 			  <li *ngFor="let card of selectedCard">
-				<div class="card {{card.cardType.color}}" title="{{card.displayName}}">
+				<div class="card {{card.cardType.color}} card-{{card.displayName}}" title="{{card.displayName}}">
 				  <div class="letterTop">{{card.letter}}</div>
 					<div class="suit" [innerHTML]="card.cardType.glyph"></div>
 					<div class="letterBottom">{{card.letter}}</div>
